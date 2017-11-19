@@ -1,0 +1,47 @@
+
+        .fade {
+            display:inline-block;
+            background: -moz-linear-gradient(left, rgb(250,250,250) 0%, rgba(250,250,250,0) 100%);
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, rgb(250,250,250)), color-stop(1.00, rgba(250,250,250,0)));
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fafafa, endColorstr=#00fafafa, GradientType=1);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#fafafa, endColorstr=#00fafafa, GradientType=1)";
+        }
+        .blur {
+            display:inline-block;
+            color:#ddd;
+            text-shadow: 0 0 2px #aaaaaa;
+            text-shadow: 0 0 4px #aaaaaa;
+            text-shadow: 0 0 6px #aaaaaa;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Blur(pixelradius=2)";
+            filter:
+                progid:DXImageTransform.Microsoft.MotionBlur(strength=1,direction=310)
+                progid:DXImageTransform.Microsoft.Blur(pixelradius=2);
+        }
+        .flipH {
+            display:inline-block;
+            -moz-transform:scale(-1,1);
+            -o-transform:scale(-1,1);
+            -webkit-transform:scale(-1,1);
+            transform:scale(-1,1);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
+            filter: progid:DXImageTransform.Microsoft.Matrix(
+                M11=-1,
+                M12=0,
+                M21=0,
+                M22=1,
+                SizingMethod="auto expand");
+        }
+        .flipV {
+            display:inline-block;
+            -moz-transform:scale(1,-1);
+            -o-transform:scale(1,-1);
+            -webkit-transform:scale(1,-1);
+            transform:scale(1,-1);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=-1, SizingMethod='auto expand')";
+            filter: progid:DXImageTransform.Microsoft.Matrix(
+                M11=1,
+                M12=0,
+                M21=0,
+                M22=-1,
+                SizingMethod="auto expand");
+        }
